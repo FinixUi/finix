@@ -85,6 +85,11 @@
           "path": "/ai/openai?text="
         }, 
         {
+          "name": "Islam AI",
+          "desc": "Islam AI chat",
+          "path": "/ai/islam?text="
+        }, 
+        {
           "name": "Deepseek",
           "desc": "Deepseek ai",
           "path": "/ai/deepseek?text="
