@@ -7,17 +7,21 @@ module.exports = function(app) {
       if (!text) {
         return res.status(400).json({ status: false, error: 'Parameter "text" wajib diisi' });
       }
-
-      const response = await axios.get(`https://apizell.web.id/ai/blackbox?text=${encodeURIComponent(text)}`);
-
+      
+      // Panggil API eksternal
+      const { data } = await axios.get(`https://apizell.web.id/ai/blackbox?text=${encodeURIComponent(text)}`);
+      
+      // Pastikan response-nya sesuai struktur yang diharapkan
+      const result = data?.result || data;
+      
       res.status(200).json({
         status: true,
-        result: response.data.result || response.data
+        result
       });
     } catch (error) {
       res.status(500).json({
         status: false,
-        error: error.message
+        error: error.response?.data?.message || error.message
       });
     }
   });
