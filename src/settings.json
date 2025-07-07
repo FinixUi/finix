@@ -117,6 +117,11 @@
           "path": "/random/ba"
         }, 
         {
+          "name": "Blue Archive",
+          "desc": "Random foto blue archive",
+          "path": "/random/loli"
+        },
+        {
           "name": "Random Waifu",
           "desc": "Random foto waifu",
           "path": "/random/waifu"
