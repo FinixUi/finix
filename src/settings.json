@@ -80,20 +80,15 @@
       "name": "Openai",
       "items": [
         {
-          "name": "OpenAI",
-          "desc": "Openai chat",
-          "path": "/ai/openai?text="
+          "name": "Black Box AI",
+          "desc": "Black Box chat",
+          "path": "/ai/blackbox?text="
         }, 
         {
           "name": "Islam AI",
           "desc": "Islam AI chat",
           "path": "/ai/islam?text="
-        }, 
-        {
-          "name": "Deepseek",
-          "desc": "Deepseek ai",
-          "path": "/ai/deepseek?text="
-        }        
+        }
       ]
     },
     {
