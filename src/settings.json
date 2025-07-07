@@ -1,0 +1,168 @@
+{
+  "name": "Finix UI API's",
+  "version": "v3.0.0",
+  "description": "Simple and fast API for full-featured WhatsApp Bot integration.",
+  "header": {
+    "status": "Active!"
+  },
+  "apiSettings": {
+    "creator": "X-Skycode", 
+    "apikey": ["finixui"]
+  },
+  "links": [
+    {
+      "name": "Base URL:",
+      "url": "https://api.finix-cloud.my.id"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Downloader",
+      "items": [
+        {
+          "name": "Bratvid",
+          "desc": "Brat video generator",
+          "path": "/imagecreator/brat?text="
+        }, 
+        {
+          "name": "Bratvid",
+          "desc": "Brat video generator",
+          "path": "/imagecreator/brat?text="
+        }                      
+      ]
+    },
+    {
+      "name": "Imagecreator",
+      "items": [
+        {
+          "name": "Remini",
+          "desc": "HD quality image",
+          "path": "/imagecreator/remini?url="
+        }, 
+        {
+          "name": "Removebg",
+          "desc": "Remove background image",
+          "path": "/imagecreator/removebg?url="
+        }                      
+      ]
+    },
+    {
+      "name": "Openai",
+      "items": [
+        {
+          "name": "OpenAI",
+          "desc": "Openai chat",
+          "path": "/ai/openai?text="
+        }, 
+        {
+          "name": "Deepseek",
+          "desc": "Deepseek ai",
+          "path": "/ai/deepseek?text="
+        }        
+      ]
+    },
+    {
+      "name": "Orderkuota",
+      "items": [
+        {
+          "name": "Create Payment",
+          "desc": "Create qris payment", 
+          "path": "/orderkuota/createpayment?apikey=&amount=&codeqr=", 
+          "innerDesc": "Buy apikey >> wa.me/628386890336"
+        },
+        {
+          "name": "Cek Status",
+          "desc": "Cek status payment", 
+          "path": "/orderkuota/cekstatus?apikey=&merchant=&keyorkut=", 
+          "innerDesc": "Buy apikey >> wa.me/628386890336"          
+        }
+      ]
+    },    
+    {
+      "name": "Random",
+      "items": [
+        {
+          "name": "Blue Archive",
+          "desc": "Random foto blue archive",
+          "path": "/random/ba"
+        }, 
+        {
+          "name": "Random Waifu",
+          "desc": "Random foto waifu",
+          "path": "/random/waifu"
+        }, 
+        {
+          "name": "Random Nsfw",
+          "desc": "Random foto nsfw",
+          "path": "/random/nsfw"
+        }, 
+        {
+          "name": "Pap Ayang",
+          "desc": "Random pap ayang",
+          "path": "/random/papayang"
+        }                       
+      ]
+    },
+    {
+      "name": "Search",
+      "items": [
+        {
+          "name": "Youtube Search",
+          "desc": "Search youtube",
+          "path": "/search/youtube?q="
+        }, 
+        {
+          "name": "Pinterest",
+          "desc": "Search foto pinterest",
+          "path": "/search/youtube?q="
+        }, 
+        {
+          "name": "Google Image",
+          "desc": "Search foto google",
+          "path": "/search/gimage?q="
+        }, 
+        {
+          "name": "Playstore",
+          "desc": "Search apk playstore",
+          "path": "/search/playstore?q="
+        }, 
+        {
+          "name": "Npm Search",
+          "desc": "Search npm nodejs",
+          "path": "/search/npm?q="
+        },        
+        {
+          "name": "Fdroid",
+          "desc": "Search apk fdroid",
+          "path": "/search/fdroid?q="
+        },    
+        {
+          "name": "Happymod",
+          "desc": "Search apk happymod",
+          "path": "/search/happymod?q="
+        },           
+        {
+          "name": "Tiktok",
+          "desc": "Search tiktok video",
+          "path": "/search/tiktok?q="
+        }, 
+        {
+          "name": "XNXX Search",
+          "desc": "Search xnxx video",
+          "path": "/search/xnxx?q="
+        }, 
+        {
+          "name": "Lyrics Search",
+          "desc": "Search lyrics music",
+          "path": "/search/lyrics?q="
+        }, 
+        {
+          "name": "Sfile Search",
+          "desc": "Search url sfile mobi",
+          "path": "/search/sfile?q="
+        }                                   
+      ]
+    }               
+  ]
+}
+

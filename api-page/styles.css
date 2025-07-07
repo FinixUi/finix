@@ -1,0 +1,365 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header-section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.header-title h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.base-url {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.base-url-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.nav-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-tab {
+    background: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-tab.active {
+    background: #333;
+    color: white;
+}
+
+.nav-tab:hover {
+    background: #f0f0f0;
+    transform: translateY(-1px);
+}
+
+.nav-tab.active:hover {
+    background: #555;
+}
+
+/* API Items */
+.api-section {
+    padding: 0 20px;
+}
+
+.api-item {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.api-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.api-info {
+    flex: 1;
+}
+
+.api-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 4px 0;
+}
+
+.api-desc {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.api-method {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 50px;
+}
+
+.play-button {
+    background: #333;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.play-button:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+.play-button::before {
+    content: "▶";
+    margin-left: 2px;
+}
+
+/* Search */
+#searchInput {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0 0 0 3px rgba(51,51,51,0.1);
+}
+
+/* Loading Screen */
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.spinner-wrapper {
+    text-align: center;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.modal-desc {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.modal-body {
+    padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.modal-footer {
+    border-top: 1px solid #eee;
+    padding: 15px 20px;
+}
+
+#apiEndpoint, #apiResponseContent {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #e9ecef;
+}
+
+.btn-dark {
+    background: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background: #555;
+    transform: translateY(-1px);
+}
+
+/* Footer */
+#wm {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .header-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .header-title h1 {
+        font-size: 24px;
+    }
+    
+    .nav-tabs {
+        padding: 0 10px;
+    }
+    
+    .api-section {
+        padding: 0 10px;
+    }
+    
+    .api-item {
+        padding: 12px;
+    }
+    
+    .api-name {
+        font-size: 15px;
+    }
+    
+    .api-desc {
+        font-size: 13px;
+    }
+}
+
+/* Hide elements initially */
+.category-section {
+    display: none;
+}
+
+.category-section.active {
+    display: block;
+}
+
+/* Navbar (hidden by default) */
+.navbar {
+    display: none;
+}
+
