@@ -20,15 +20,45 @@
       "name": "Downloader",
       "items": [
         {
-          "name": "Bratvid",
-          "desc": "Brat video generator",
-          "path": "/imagecreator/brat?text="
+          "name": "AIO",
+          "desc": "All in One Downloader",
+          "path": "/download/aio?url="
         }, 
         {
-          "name": "Bratvid",
-          "desc": "Brat video generator",
-          "path": "/imagecreator/brat?text="
-        }                      
+          "name": "Doodstream",
+          "desc": "Doodstream Downloader",
+          "path": "/download/doodstream?url="
+        },
+        {
+          "name": "facebook",
+          "desc": "facebook Downloader",
+          "path": "/download/facebook?url="
+        },
+        {
+          "name": "GDrive",
+          "desc": "GDrive Downloader",
+          "path": "/download/gdrive?url="
+        },
+        {
+          "name": "Instagram",
+          "desc": "Instagram Downloader",
+          "path": "/download/instragram?url="
+        },
+        {
+          "name": "Pinterest",
+          "desc": "Pinterest Downloader",
+          "path": "/download/pinterest?url="
+        },
+        {
+          "name": "Snack Video",
+          "desc": "Snack Video Downloader",
+          "path": "/download/snackvidio?url="
+        },
+        {
+          "name": "Capcut",
+          "desc": "Capcut Downloader",
+          "path": "/download/capcut?url="
+        }
       ]
     },
     {
@@ -40,9 +70,9 @@
           "path": "/imagecreator/remini?url="
         }, 
         {
-          "name": "Removebg",
-          "desc": "Remove background image",
-          "path": "/imagecreator/removebg?url="
+          "name": "Brat",
+          "desc": "Brat image",
+          "path": "/imagecreator/brat?text="
         }                      
       ]
     },
