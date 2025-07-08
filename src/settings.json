@@ -37,6 +37,17 @@
           }
         }
       ]
+    },
+        {
+      "name": "Random",
+      "items": [
+        {
+          "name": "Blue Archive",
+          "desc": "Blue Archive Random Images",
+          "path": "/random/ba",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
