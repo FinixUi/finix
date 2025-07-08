@@ -37,17 +37,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "Tools",
-      "items": [
-     {
-        "name": "Info Gempa",
-        "desc": "mengetahui gempa di mana",
-        "path": "/tools/gempa",
-        "status": "ready"
-      }
-      ]
     }
   ]
 }
