@@ -1,203 +1,33 @@
 {
-  "name": "Finix UI API's",
-  "version": "v3.0.0",
-  "description": "Simple and fast API for full-featured WhatsApp Bot integration.",
+  "name": "Finix Api'S",
+  "version": "v1.0.0",
+  "description": "Simple and easy to use API.",
+  "maintenance": {
+    "enabled": false,
+    "gifUrl": "https://raw.githubusercontent.com/raolbyte/xyz/refs/heads/main/public/maintenance.gif"
+  },
+  "bannerImage": "/src/banner.jpg",
   "header": {
     "status": "Active!"
   },
   "apiSettings": {
-    "creator": "X-Skycode", 
-    "apikey": ["finixui"]
+    "creator": "Finix Team",
+    "apikey": ["finix-team"]
   },
-  "links": [
-    {
-      "name": "Base URL:",
-      "url": "https://api.finix-cloud.my.id"
-    }
-  ],
   "categories": [
     {
-      "name": "Downloader",
+      "name": "Artificial Intelligence",
       "items": [
         {
-          "name": "AIO",
-          "desc": "All in One Downloader",
-          "path": "/download/aio?url="
-        }, 
-        {
-          "name": "Doodstream",
-          "desc": "Doodstream Downloader",
-          "path": "/download/doodstream?url="
-        },
-        {
-          "name": "facebook",
-          "desc": "facebook Downloader",
-          "path": "/download/facebook?url="
-        },
-        {
-          "name": "GDrive",
-          "desc": "GDrive Downloader",
-          "path": "/download/gdrive?url="
-        },
-        {
-          "name": "Instagram",
-          "desc": "Instagram Downloader",
-          "path": "/download/instragram?url="
-        },
-        {
-          "name": "Pinterest",
-          "desc": "Pinterest Downloader",
-          "path": "/download/pinterest?url="
-        },
-        {
-          "name": "Snack Video",
-          "desc": "Snack Video Downloader",
-          "path": "/download/snackvidio?url="
-        },
-        {
-          "name": "Capcut",
-          "desc": "Capcut Downloader",
-          "path": "/download/capcut?url="
+          "name": "LuminAI",
+          "desc": "Talk with luminai - Advanced AI assistant",
+          "path": "/ai/luminai?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for luminai to respond to"
+          }
         }
       ]
-    },
-    {
-      "name": "Imagecreator",
-      "items": [
-        {
-          "name": "Remini",
-          "desc": "HD quality image",
-          "path": "/imagecreator/remini?url="
-        }, 
-        {
-          "name": "Brat",
-          "desc": "Brat image",
-          "path": "/imagecreator/brat?text="
-        }                      
-      ]
-    },
-    {
-      "name": "Openai",
-      "items": [
-        {
-          "name": "Black Box AI",
-          "desc": "Black Box chat",
-          "path": "/ai/blackbox?text="
-        }, 
-        {
-          "name": "Islam AI",
-          "desc": "Islam AI chat",
-          "path": "/ai/islam?text="
-        }
-      ]
-    },
-    {
-      "name": "Orderkuota",
-      "items": [
-        {
-          "name": "Create Payment",
-          "desc": "Create qris payment", 
-          "path": "/orderkuota/createpayment?apikey=&amount=&codeqr=", 
-          "innerDesc": "Buy apikey >> wa.me/628386890336"
-        },
-        {
-          "name": "Cek Status",
-          "desc": "Cek status payment", 
-          "path": "/orderkuota/cekstatus?apikey=&merchant=&keyorkut=", 
-          "innerDesc": "Buy apikey >> wa.me/628386890336"          
-        }
-      ]
-    },    
-    {
-      "name": "Random",
-      "items": [
-        {
-          "name": "Blue Archive",
-          "desc": "Random foto blue archive",
-          "path": "/random/ba"
-        }, 
-        {
-          "name": "Loli Image",
-          "desc": "Random foto Loli",
-          "path": "/random/loli"
-        },
-        {
-          "name": "Random Waifu",
-          "desc": "Random foto waifu",
-          "path": "/random/waifu"
-        }, 
-        {
-          "name": "Random Nsfw",
-          "desc": "Random foto nsfw",
-          "path": "/random/nsfw"
-        }, 
-        {
-          "name": "Pap Ayang",
-          "desc": "Random pap ayang",
-          "path": "/random/papayang"
-        }                       
-      ]
-    },
-    {
-      "name": "Search",
-      "items": [
-        {
-          "name": "Youtube Search",
-          "desc": "Search youtube",
-          "path": "/search/youtube?q="
-        }, 
-        {
-          "name": "Pinterest",
-          "desc": "Search foto pinterest",
-          "path": "/search/youtube?q="
-        }, 
-        {
-          "name": "Google Image",
-          "desc": "Search foto google",
-          "path": "/search/gimage?q="
-        }, 
-        {
-          "name": "Playstore",
-          "desc": "Search apk playstore",
-          "path": "/search/playstore?q="
-        }, 
-        {
-          "name": "Npm Search",
-          "desc": "Search npm nodejs",
-          "path": "/search/npm?q="
-        },        
-        {
-          "name": "Fdroid",
-          "desc": "Search apk fdroid",
-          "path": "/search/fdroid?q="
-        },    
-        {
-          "name": "Happymod",
-          "desc": "Search apk happymod",
-          "path": "/search/happymod?q="
-        },           
-        {
-          "name": "Tiktok",
-          "desc": "Search tiktok video",
-          "path": "/search/tiktok?q="
-        }, 
-        {
-          "name": "XNXX Search",
-          "desc": "Search xnxx video",
-          "path": "/search/xnxx?q="
-        }, 
-        {
-          "name": "Lyrics Search",
-          "desc": "Search lyrics music",
-          "path": "/search/lyrics?q="
-        }, 
-        {
-          "name": "Sfile Search",
-          "desc": "Search url sfile mobi",
-          "path": "/search/sfile?q="
-        }                                   
-      ]
-    }               
+    }
   ]
 }
-
