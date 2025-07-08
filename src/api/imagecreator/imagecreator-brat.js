@@ -1,33 +1,28 @@
-const fetch = require('node-fetch');
+const fetch = require('node-fetch')
 
-async function brat(text) {
-  const url = `https://api.siputzx.my.id/api/m/brat?text=${encodeURIComponent(text)}&isAnimated=false&delay=500`;
-  const res = await fetch(url);
-  
-  if (!res.ok) {
-    throw new Error(`Gagal mengambil gambar: ${res.statusText}`);
-  }
-  
-  return await res.buffer();
+async function brat(q) {
+  let res = await fetch(`https://brat.caliphdev.com/api/brat?text=${q}`)
+  let buffer = await res.buffer()
+  return buffer
 }
 
 module.exports = function(app) {
   app.get('/imagecreator/brat', async (req, res) => {
-    const { text } = req.query;
+    const { text } = req.query
     
     if (!text) {
-      return res.status(400).json({ status: false, error: "Tolong masukkan text-nya" });
+      return res.status(400).json({ status: false, error: "Tolong masukkan text nya" });
     }
     
     try {
-      const imageBuffer = await brat(text);
+      const anuge = await brat(text);
       res.writeHead(200, {
         'Content-Type': 'image/png',
-        'Content-Length': imageBuffer.length,
+        'Content-Length': anuge.length,
       });
-      res.end(imageBuffer);
+      res.end(anuge);
     } catch (error) {
       res.status(500).send(`Error: ${error.message}`);
     }
   });
-};
+}
