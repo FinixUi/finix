@@ -37,6 +37,20 @@
           }
         }
       ]
+    },
+    {
+      "name": "Image Creator",
+      "items": [
+        {
+          "name": "Brat Image",
+          "desc": "Brat Image Creator",
+          "path": "/imagecreator/brat?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text to brat image"
+          }
+        }
+      ]
     }
   ]
 }
