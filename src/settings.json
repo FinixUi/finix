@@ -19,6 +19,15 @@
       "name": "Artificial Intelligence",
       "items": [
         {
+          "name": "Islam AI",
+          "desc": "Talk with islam ai - Advanced AI assistant",
+          "path": "/ai/islam?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for islam ai to respond to"
+          }
+        },
+        {
           "name": "LuminAI",
           "desc": "Talk with luminai - Advanced AI assistant",
           "path": "/ai/luminai?text=",
