@@ -42,14 +42,11 @@
       "name": "Image Creator",
       "items": [
      {
-          "name": "Brat",
-          "desc": "mengubah text menjadi sticker",
-          "path": "/imagecreator/brat?text=",
-          "status": "ready",
-          "params": {
-            "text": "Tolong masukkan text nya"
-          }
-        }
+        "name": "Info Gempa",
+        "desc": "mengetahui gempa di mana",
+        "path": "/tools/gempa",
+        "status": "ready"
+      }
       ]
     }
   ]
