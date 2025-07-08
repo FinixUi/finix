@@ -41,13 +41,13 @@
     {
       "name": "Image Creator",
       "items": [
-        {
-          "name": "Brat Image",
-          "desc": "Brat Image Creator",
+     {
+          "name": "Brat",
+          "desc": "mengubah text menjadi sticker",
           "path": "/imagecreator/brat?text=",
           "status": "ready",
           "params": {
-            "text": "Text to brat image"
+            "text": "Tolong masukkan text nya"
           }
         }
       ]
